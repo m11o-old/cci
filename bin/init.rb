@@ -17,7 +17,7 @@ counts.each_with_index do |count, index|
     Dir.mkdir "java" unless Dir.exist? "java"
     Dir.mkdir "ruby" unless Dir.exist? "ruby"
 
-    File.open("java/main.java", "w") do |f|
+    File.open("java/Main.java", "w") do |f|
       f.puts <<-EOS
 class Main {
   public static void main(String args[]) {
